@@ -1,17 +1,110 @@
 :root {
     --primary: #2c3e50;
     --accent: #6c63ff;
-    --gradient-bg : #6c63ff, #7b68ee, #a067e3;
+    --gradient-bg : linear-gradient(to right,#6c63ff, #7b68ee, #a067e3);
     --text: #333;
 }
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
 }
 
 body {
     font-family: 'inter' sans-serif;
     background-color: #f4f6fa ;
-    color: var( --text);
+    color: var(--text);
 }
 
+header {
+    background: var(--gradient-bg);
+    color: white;
+    padding: 80px 20px 80px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: white;
+    color: var(--accent);
+    padding: 12px 24px 12px 24px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+}
+
+.cta-btn:hover {
+    background-color: #ddd;
+}
+
+section {
+    padding: 60px 20px 60px 20px;
+    max-width: 1100px;
+    text-align: center;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.activities {
+    border-top: 1px dashed grey;
+}
+
+.activity-grid {
+    display: grid;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.activity {
+    background-color: white;
+    padding: 30px 20px 30px 20px;
+    border-radius: 12px;
+    box-shadow: rgba(94, 93, 93, 0.722);
+}
+
+.activity:hover {
+    transform: translateY(-5px);
+}
+
+.activity i {
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+.activity h3 {
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+footer {
+    background-color: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 30px 20px 30px 20px;
+    margin-top: 40px;
+}
